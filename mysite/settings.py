@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-bii9o3ujsu9mul!ce)t39oeu@g7j8@%@uevg#=z=yjsb1zn!r^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://blog-api-test-6ica.onrender.com", "localhost"]
+ALLOWED_HOSTS = ["https://blog-api-test-6ica.onrender.com"]
 
 
 
@@ -128,10 +128,16 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+
+
 
 
 
