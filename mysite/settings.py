@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-bii9o3ujsu9mul!ce)t39oeu@g7j8@%@uevg#=z=yjsb1zn!r^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["blogSite.onrender.com", "localhost"]
+ALLOWED_HOSTS = ["https://blog-api-test-6ica.onrender.com", "localhost"]
 
 
 
